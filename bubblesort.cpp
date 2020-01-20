@@ -8,20 +8,23 @@ void bubbleSort(int* ar, int size)
 		std::cout << "Incorrect size of array" << std::endl;
 		return;
 	}
-	for (int i = 0; i < size - 1; i++)
+	if (ar != nullptr)
 	{
-		bool flag = false;
-		for (int j = 0; j < size - i - 1; j++)
+		for (int i = 0; i < size - 1; i++)
 		{
-			if (ar[j] > ar[j + 1])
+			bool flag = false;
+			for (int j = 0; j < size - i - 1; j++)
 			{
-				int Tmp = ar[j];
-				ar[j] = ar[j + 1];
-				ar[j + 1] = Tmp;
-				flag = true;
+				if (ar[j] > ar[j + 1])
+				{
+					int Tmp = ar[j];
+					ar[j] = ar[j + 1];
+					ar[j + 1] = Tmp;
+					flag = true;
+				}
 			}
+			if (flag == false)
+				break;
 		}
-		if (flag == false)
-			break;
 	}
 }
