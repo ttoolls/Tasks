@@ -1,13 +1,9 @@
-#include <iostream>
+
 #include "bubblesort.h"
 
-void bubbleSort(int* ar, int size)
+void bubbleSort(int* ar, size_t size)
 {
-	if (size < 0)
-	{
-		std::cout << "Incorrect size of array" << std::endl;
-		return;
-	}
+	
 	if (ar != nullptr)
 	{
 		for (int i = 0; i < size - 1; i++)
