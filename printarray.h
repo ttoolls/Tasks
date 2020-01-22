@@ -5,13 +5,8 @@ using std::cout;
 using std::endl;
 
 
-template <typename T> void  printAr(const T* ar, const int n)
+template <typename T> void  printAr(const T* ar, const size_t n)
 {
-	if (n < 0)
-	{
-		cout << "Incorrect size of array \n";
-		return;
-	}
 	if (ar != nullptr)
 	{
 		for (int i = 0; i < n; i++)

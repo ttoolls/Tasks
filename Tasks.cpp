@@ -4,10 +4,13 @@
 
 #include <iostream>
 #include "bubblesort.h"
-
+#include "tests.h"
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	testAll();
+	return 0;
 }
+
+
 
